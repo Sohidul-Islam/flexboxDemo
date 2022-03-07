@@ -2,15 +2,528 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .main-container {
+            border: 1px solid red;
+            margin: 20px 0;
+        }
+
+        .container1 {
+            display: flex;
+            height: 600px;
+
+            margin-bottom: 40px;
+        }
+
+        .container1 .box {
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container2 {
+            display: flex;
+            justify-content: center;
+            height: 600px;
+
+            margin-bottom: 40px;
+        }
+
+        .container2 .box {
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container3 {
+            display: flex;
+            justify-content: end;
+            height: 600px;
+
+            margin-bottom: 40px;
+        }
+
+        .container3 .box {
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container4 {
+            display: flex;
+            justify-content: space-between;
+            height: 600px;
+
+            margin-bottom: 40px;
+        }
+
+        .container4 .box {
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container5 {
+            display: flex;
+            justify-content: space-evenly;
+            height: 600px;
+
+            margin-bottom: 40px;
+        }
+
+        .container5 .box {
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container6 {
+            display: flex;
+            justify-content: space-around;
+            height: 600px;
+
+            margin-bottom: 40px;
+        }
+
+        .container6 .box {
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container7 {
+            display: flex;
+            justify-content: space-around;
+            align-items: end;
+            height: 600px;
+
+            margin-bottom: 40px;
+        }
+
+        .container7 .box {
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container8 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 600px;
+
+            margin-bottom: 40px;
+        }
+
+        .container8 .box {
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container9 {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            height: 600px;
+
+            margin-bottom: 40px;
+        }
+
+        .container9 .box {
+            width: 300px;
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container10 {
+            display: flex;
+            justify-content: space-around;
+            height: 600px;
+
+            margin-bottom: 40px;
+        }
+
+        .container10 .box {
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container10 .box1 {
+            flex-grow: 1;
+        }
+
+        .container10 .box2 {
+            flex-grow: 2;
+        }
+
+        .container10 .box3 {
+            flex-grow: 1;
+        }
+
+        .container11 {
+            display: flex;
+            justify-content: space-around;
+            height: 600px;
+
+            margin-bottom: 40px;
+        }
+
+        .container11 .box {
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container11 .box-1 {
+            flex-grow: 1;
+        }
+
+        .container11 .box-2 {
+            flex-grow: 1;
+        }
+
+        .container11 .box-3 {
+            flex-grow: 1;
+        }
+
+        .container12 {
+            display: flex;
+            justify-content: space-around;
+            height: 600px;
+
+            margin-bottom: 40px;
+        }
+
+        .container12 .box {
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .container12 .box-1 {
+            order: 2;
+        }
+
+        .container12 .box-2 {
+            order: 1;
+        }
+
+        .container12 .box-3 {
+            order: 2;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Exploring Html5</h1>
-    <audio src="media/audio/Spinnin Tape - Danger Zone.mp3" controls></audio>
+    <div class="main-container">
+        <h1>Display: flex</h1>
+        <hr />
+        <div class="container1">
+            <div class="box">
+                <h1>this is heading 1</h1>
+                <p>this is paragraph 1</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 2</h1>
+                <p>this is paragraph 2</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 3</h1>
+                <p>this is paragraph 3</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <h1>
+            display: flex;<br />
+            justify-content: center;
+        </h1>
+
+        <hr />
+        <div class="container2">
+            <div class="box">
+                <h1>this is heading 1</h1>
+                <p>this is paragraph 1</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 2</h1>
+                <p>this is paragraph 2</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 3</h1>
+                <p>this is paragraph 3</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <h1>
+            display: flex;<br />
+            justify-content: end;
+        </h1>
+
+        <hr />
+        <div class="container3">
+            <div class="box">
+                <h1>this is heading 1</h1>
+                <p>this is paragraph 1</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 2</h1>
+                <p>this is paragraph 2</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 3</h1>
+                <p>this is paragraph 3</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <h1>
+            display: flex;<br />
+            justify-content: space-between;
+        </h1>
+
+        <hr />
+        <div class="container4">
+            <div class="box">
+                <h1>this is heading 1</h1>
+                <p>this is paragraph 1</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 2</h1>
+                <p>this is paragraph 2</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 3</h1>
+                <p>this is paragraph 3</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <h1>
+            display: flex;<br />
+            justify-content: space-evenly;
+        </h1>
+
+        <hr />
+        <div class="container5">
+            <div class="box">
+                <h1>this is heading 1</h1>
+                <p>this is paragraph 1</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 2</h1>
+                <p>this is paragraph 2</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 3</h1>
+                <p>this is paragraph 3</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <h1>
+            display: flex;<br />
+            justify-content: space-around;
+        </h1>
+
+        <hr />
+        <div class="container6">
+            <div class="box">
+                <h1>this is heading 1</h1>
+                <p>this is paragraph 1</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 2</h1>
+                <p>this is paragraph 2</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 3</h1>
+                <p>this is paragraph 3</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <h1>
+            display: flex;<br>
+            justify-content: space-around;<br>
+            align-items: end;
+        </h1>
+
+        <hr />
+        <div class="container7">
+            <div class="box">
+                <h1>this is heading 1</h1>
+                <p>this is paragraph 1</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 2</h1>
+                <p>this is paragraph 2</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 3</h1>
+                <p>this is paragraph 3</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <h1>
+            display: flex;<br>
+            justify-content: space-around;<br>
+            align-items: center;
+        </h1>
+
+        <hr />
+        <div class="container8">
+            <div class="box">
+                <h1>this is heading 1</h1>
+                <p>this is paragraph 1</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 2</h1>
+                <p>this is paragraph 2</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 3</h1>
+                <p>this is paragraph 3</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <h1>
+            display: flex;<br />
+            justify-content: center; <br>
+            align-items: stretch;
+        </h1>
+
+        <hr />
+        <div class="container9">
+            <div class="box">
+                <h1>this is heading 1</h1>
+                <p>this is paragraph 1</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 2</h1>
+                <p>this is paragraph 2</p>
+            </div>
+            <div class="box">
+                <h1>this is heading 3</h1>
+                <p>this is paragraph 3</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <h1>
+            display: flex;<br />
+            justify-content: space-around; <br>
+            also use flex-grow.
+        </h1>
+
+        <hr />
+        <div class="container10">
+            <div class="box box1">
+                <h1>this is heading 1</h1>
+                <p>this is paragraph 1</p>
+            </div>
+            <div class="box box2">
+                <h1>this is heading 2</h1>
+                <p>this is paragraph 2</p>
+            </div>
+            <div class="box box3">
+                <h1>this is heading 3</h1>
+                <p>this is paragraph 3</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <h1>
+            display: flex;<br>
+            justify-content: space-around; <br>
+            also use flex grow
+        </h1>
+
+        <hr />
+        <div class="container11">
+            <div class="box box-1">
+                <h1>this is heading 1</h1>
+                <p>this is paragraph 1</p>
+            </div>
+            <div class="box box-2">
+                <h1>this is heading 2</h1>
+                <p>this is paragraph 2</p>
+            </div>
+            <div class="box box-3">
+                <h1>this is heading 3</h1>
+                <p>this is paragraph 3</p>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+        <h1>
+            display: flex;<br />
+            justify-content: space-around; <br>
+            also use flex order
+        </h1>
+
+        <hr />
+        <div class="container12">
+            <div class="box box-1">
+                <h1>this is heading 1</h1>
+                <p>this is paragraph 1</p>
+            </div>
+            <div class="box box-2">
+                <h1>this is heading 2</h1>
+                <p>this is paragraph 2</p>
+            </div>
+            <div class="box box-3">
+                <h1>this is heading 3</h1>
+                <p>this is paragraph 3</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
